@@ -24,11 +24,12 @@ Parameters:
 
   GitHubUser:
     Type: String
+    Default: HsiehShuJeng
     Description: Your username on GitHub.
 
   GitHubRepo:
     Type: String
-    Default: ecs-demo-php-simple-app
+    Default: ecs-refarch-continuous-deployment
     Description: The repo name of the sample service.
 
   GitHubBranch:
@@ -38,13 +39,14 @@ Parameters:
 
   GitHubToken:
     Type: String
+    Default: 38fcb008472ab6adcba45fb0ade0aa65ad4ff18c
     NoEcho: true
     Description: >
       Token for the user specified above. (https://github.com/settings/tokens)
 
   TemplateBucket:
     Type: String
-    Default: ecs-refarch-continuous-deployment
+    Default: cf-templates-1aq45432tg9hp-ap-northeast-1
     Description: >
       The S3 bucket from which to fetch the templates used by this stack.
 
